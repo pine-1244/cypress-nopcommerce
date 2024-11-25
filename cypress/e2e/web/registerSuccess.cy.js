@@ -1,15 +1,18 @@
 /// <reference types="cypress" />
-
+const criarPessoa = require('../../support/utils');
 describe('Registro com Sucesso', () => {
   beforeEach(() => {
     cy.visit('/register?returnUrl=%2Fregister')
   });
   
-  it('CT01 - Todos os Campos Preenchidos corretamente', () => {    
+  it('CT01 - Todos os Campos Preenchidos corretamente', () => {
+    const user = criarPessoa()
+    
+    console.log(user)
     cy.generateUser();
-    cy.fixture('user').then((user) => {
-      cy.registerUser({ firstName: user.username, lastName: user.lastname, day: user.birthday, month: user.birthmonth, year: user.birthyear, email: user.email, company: user.company, password: user.password });
-    })
+
+    cy.registerUser({ firstName: user.username, lastName: user.lastname, day: user.birthday, month: user.birthmonth, year: user.birthyear, email: user.email, company: user.company, password: user.password });
+
        
     cy.get('.zone-name-title').should('be.visible')
     
