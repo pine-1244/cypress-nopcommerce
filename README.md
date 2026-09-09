@@ -1,33 +1,33 @@
 <h1 align="center">
-    <img src="cypress/img/demo.nopcommerce.com.png">
+<img src="cypress/img/demo.nopcommerce.com.png">
 </h1>
 
 
-## 📋 Sobre
+## 📋 About
 
-**Testes de Front-End** no site [nopcommerce](https://demo.nopcommerce.com/)
-### ✅ Fazer um registro com sucesso
+**Front-End Tests** on the [nopcommerce](https://demo.nopcommerce.com/) site
+### ✅ Successfully register
 <h1 align="center">
-    <img src="cypress/img/registerSuscess.cy.js.gif">
+<img src="cypress/img/registerSuscess.cy.js.gif">
 </h1>
 
-### ✅ Validar mensagem de erro durante o registro
+### ✅ Validate error message during registration
 <h1 align="center">
-    <img src="cypress/img/fieldsRequired.cy.js.gif">
+<img src="cypress/img/fieldsRequired.cy.js.gif">
 </h1>
 
 
-**Testes de API** no projeto [ServResT](https://serverest.dev/)
+**API Tests** on the [ServResT](https://serverest.dev/) project
 
-### ✅ POST /Usuario 
+### ✅ POST /Usuario
 ### ✅ PUT /Usuario
 ### ✅ GET /Usuario
 ### ✅ DELETE /Usuario
 <h1 align="center">
-    <img src="cypress/img/user.cy.js.gif">
+<img src="cypress/img/user.cy.js.gif">
 </h1>
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript)
 - [Npm](https://www.npmjs.com/)
@@ -40,31 +40,30 @@
 - [Docker](https://www.docker.com/)
 - [Git](https://git-scm.com/)
 
-## 🛠️ Planejamento dos Testes
+## 🛠️ Test Planning
 - [Front-End](https://www.cypress.io/)
 - [API](https://www.cypress.io/)
 
 
-## 🎮 Como clonar o projeto e Executar os testes
+## 🎮 How to clone the project and run the tests
 ```
-1. Clonando o repositório 
+1. Cloning the repository
 $ git clone git@github.com:clestonv/cypress-nopcommerce.git
 
-2. Acessando o diretório do projeto 
+2. Accessing the project directory
 $ cd cypress-nopcommerce
 
-3. Instalando as dependências 
+3. Installing dependencies
 $ npm -i
 
-4. Executando Modo Headless
+4. Running in Headless Mode
 $ npx cypress run
 
 OR
 
-5. Executando Com Docker
+5. Running with Docker
 $ docker run -it -v $PWD:/e2e -w /e2e --entrypoint=cypress cypress/included:3.2.0 run
 ```
 
 
-Feito por Cleberson Osorio 🌊
-
+Created by Cleberson Osorio 🌊
